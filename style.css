@@ -1,0 +1,85 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* display flex justify content and align item used to show every items (div) in center */
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* you can add many shadows using comma */
+.container {
+  width: 400px;
+  height: 700px;
+  /* background-color: black; */
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px red, -7px -7px 15px blue;
+  padding: 50px;
+  background-color: #F6F4EB;
+}
+
+/* border radius 50% make the image shape circle */
+.image img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.intro h1 {
+  text-align: center;
+  color: #4682A9;
+  text-shadow: 2px 2px #f8b43f;
+}
+
+.intro div {
+  box-shadow: 5px 5px 15px #ada4a4;
+  height: 170px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  background-color: white;
+}
+
+.projects {
+  text-align: center;
+  margin: 15px;
+}
+
+/* list style type none removes the bullet points */
+/* padding 0 removes the default padding for list */
+.projects ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* text decoration none removes the unterline from linked text */
+.projects a {
+  text-decoration: none;
+}
+
+@keyframes ani {
+  0% {
+    border-left: 5px solid blue;
+    border-right: 5px solid red;
+  }
+
+  100% {
+    border-left: 100px solid red;
+    border-right: 100px solid blue;
+  }
+}
+
+.projects h2 {
+  text-decoration: underline;
+  color: blueviolet;
+  animation: ani 3s infinite;
+}
